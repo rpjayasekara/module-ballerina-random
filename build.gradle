@@ -22,10 +22,12 @@ plugins {
     id "net.researchgate.release" version "2.8.0"
 }
 
+
 ext.ballerinaLangVersion = project.ballerinaLangVersion
 ext.puppycrawlCheckstyleVersion = "8.18"
 ext.testngVersion = "6.14.3"
 ext.slf4jVersion = "1.7.30"
+
 
 allprojects {
     group = 'org.ballerinalang'
@@ -63,9 +65,9 @@ allprojects {
     }
 }
 
-subprojects {
-    apply plugin: 'java'
-}
+// subprojects {
+//     apply plugin: 'java'
+// }
 
 def moduleVersion = project.version.replace("-SNAPSHOT", "")
 
